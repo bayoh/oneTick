@@ -23,8 +23,8 @@ jobs:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         with:
           path-to-signatures: 'signatures.json'
-          path-to-document: 'https://github.com/HiEventsDev/onetick/blob/develop/CLA.md'
+          path-to-document: 'https://github.com/bayoh/onetick/blob/develop/CLA.md'
           branch: 'main'
           allowlist: daveearley,bot*
-          remote-organization-name: HiEventsDev
+          remote-organization-name: bayoh
           remote-repository-name: cla-signatures
