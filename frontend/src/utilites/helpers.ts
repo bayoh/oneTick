@@ -90,24 +90,24 @@ export const formatNumber = (number: number) => {
 export const isSsr = () => import.meta.env.SSR;
 
 /**
- * (c) Hi.Events Ltd 2024
+ * (c) OneTick Ltd 2024
  *
  * PLEASE NOTE:
  *
- * Hi.Events is licensed under the GNU Affero General Public License (AGPL) version 3.
+ * OneTick is licensed under the GNU Affero General Public License (AGPL) version 3.
  *
- * You can find the full license text at: https://github.com/HiEventsDev/hi.events/blob/main/LICENCE
+ * You can find the full license text at: https://github.com/HiEventsDev/onetick/blob/main/LICENCE
  *
- * In accordance with Section 7(b) of the AGPL, we ask that you retain the "Powered by Hi.Events" notice.
+ * In accordance with Section 7(b) of the AGPL, we ask that you retain the "Powered by OneTick" notice.
  *
- * If you wish to remove this notice, a commercial license is available at: https://hi.events/licensing
+ * If you wish to remove this notice, a commercial license is available at: https://onetick/licensing
  */
 export const iHavePurchasedALicence = () => {
     return getConfig('VITE_I_HAVE_PURCHASED_A_LICENCE');
 }
 
 export const isHiEvents = () => {
-    return getConfig('VITE_FRONTEND_URL')?.includes('hi.events');
+    return getConfig('VITE_FRONTEND_URL')?.includes('onetick');
 }
 
 export const isEmptyHtml = (content: string) => {

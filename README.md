@@ -3,14 +3,14 @@
 </div>
 
 <p align="center">
-  <img src="https://hievents-public.s3.us-west-1.amazonaws.com/website/hi-events-rainbow.png?v=1" alt="Hi.Events Logo" width="200px">
+  <img src="https://onetick-public.s3.us-west-1.amazonaws.com/website/onetick-rainbow.png?v=1" alt="OneTick Logo" width="200px">
 </p>
 
 
-<h3 align="center">Hi.Events</h3>
+<h3 align="center">OneTick</h3>
 
 <p align="center">
-<a href="https://demo.hi.events/event/1/dog-conf-2030">Demo Event 🌟</a> • <a href="https://hi.events?utm_source=gh-readme">Website 🌎</a> • <a href="https://hi.events/docs">Documentation 📄</a> • <a href="https://hi.events/docs/getting-started?utm_source=gh-readme">Installation ⚙️</a>
+<a href="https://demo.onetick/event/1/dog-conf-2030">Demo Event 🌟</a> • <a href="https://onetick?utm_source=gh-readme">Website 🌎</a> • <a href="https://onetick/docs">Documentation 📄</a> • <a href="https://onetick/docs/getting-started?utm_source=gh-readme">Installation ⚙️</a>
 </p>
 
 <h3 align="center">
@@ -19,19 +19,19 @@
 
 <div align="center">
 
-[![Share on AddToAny](https://img.shields.io/badge/Share%20Hi.Events-blue)](https://www.addtoany.com/share?linkurl=https://github.com/HiEventsDev/hi.events)
+[![Share on AddToAny](https://img.shields.io/badge/Share%20OneTick-blue)](https://www.addtoany.com/share?linkurl=https://github.com/HiEventsDev/onetick)
 [![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/HiEventsTickets)](https://x.com/HiEventsTickets)
 <br/>
-[![Hi.Events docs](https://img.shields.io/badge/docs-hi.events-blue)](https://hi.events/docs)
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://github.com/HiEventsDev/Hi.Events/blob/develop/LICENCE)
-[![GitHub Release](https://img.shields.io/github/v/release/HiEventsDev/hi.events?include_prereleases)](https://github.com/HiEventsDev/hi.events/releases)
-[![Run Unit Tests](https://github.com/HiEventsDev/hi.events/actions/workflows/unit-tests.yml/badge.svg?event=push)](https://github.com/HiEventsDev/hi.events/actions/workflows/unit-tests.yml)
-[![Docker Pulls](https://img.shields.io/docker/pulls/daveearley/hi.events-all-in-one)](https://hub.docker.com/r/daveearley/hi.events-all-in-one)
+[![OneTick docs](https://img.shields.io/badge/docs-onetick-blue)](https://onetick/docs)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://github.com/HiEventsDev/OneTick/blob/develop/LICENCE)
+[![GitHub Release](https://img.shields.io/github/v/release/HiEventsDev/onetick?include_prereleases)](https://github.com/HiEventsDev/onetick/releases)
+[![Run Unit Tests](https://github.com/HiEventsDev/onetick/actions/workflows/unit-tests.yml/badge.svg?event=push)](https://github.com/HiEventsDev/onetick/actions/workflows/unit-tests.yml)
+[![Docker Pulls](https://img.shields.io/docker/pulls/daveearley/onetick-all-in-one)](https://hub.docker.com/r/daveearley/onetick-all-in-one)
 
 </div>
 
 <div align="center">
- <a href="https://trendshift.io/repositories/10563" target="_blank"><img src="https://trendshift.io/api/badge/repositories/10563" alt="HiEventsDev%2Fhi.events | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+ <a href="https://trendshift.io/repositories/10563" target="_blank"><img src="https://trendshift.io/api/badge/repositories/10563" alt="HiEventsDev%2Fonetick | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 </div>
 
 <hr/>
@@ -56,19 +56,19 @@
 
 ## 📚 Introduction
 
-<a href="https://hi.events">Hi.Events</a> is a feature-rich, self-hosted event management and ticketing platform. From conferences to club nights, 
-Hi.Events is designed to help you create, manage, and sell tickets for events of all sizes.
+<a href="https://onetick">OneTick</a> is a feature-rich, self-hosted event management and ticketing platform. From conferences to club nights, 
+OneTick is designed to help you create, manage, and sell tickets for events of all sizes.
 
-<img alt="Hi.Events self-hosted ticket selling dashboard" src="https://hievents-public.s3.us-west-1.amazonaws.com/website/dashboard-screenshot.png"/>
+<img alt="OneTick self-hosted ticket selling dashboard" src="https://onetick-public.s3.us-west-1.amazonaws.com/website/dashboard-screenshot.png"/>
 
 ## 🌟 Features
 
-<a href="https://hi.events">Hi.Events</a> is packed with features to streamline your event management and ticketing:
+<a href="https://onetick">OneTick</a> is packed with features to streamline your event management and ticketing:
 
 - 📊 **Event Analytics:** Gain deep insights into event performance and ticket sales.
 - 🎟 **Embeddable Ticket Widget:** Easily integrate ticket sales into any website.
 - 🖥 **Customizable Event Homepages:** Create eye-catching event pages with flexible design options.
-- 🔑 **Intuitive Check-In Tools:** Easily check in attendees at the door with Hi.Events' QR code check-in tool.
+- 🔑 **Intuitive Check-In Tools:** Easily check in attendees at the door with OneTick' QR code check-in tool.
 - 💬 **Event Messaging Tools:** Message attendees with important updates and reminders.
 - 📝 **Custom Order Forms:** Collect attendee information with tailored questions at checkout.
 - 🎫 **Multiple Ticket Types:** Free, paid, donation, or tiered ticket types.
@@ -90,14 +90,14 @@ Hi.Events is designed to help you create, manage, and sell tickets for events of
 
 ## 🚀 Getting Started
 
-For detailed installation instructions, please refer to our [documentation](https://hi.events/docs/getting-started). For
+For detailed installation instructions, please refer to our [documentation](https://onetick/docs/getting-started). For
 a quick start, follow these steps:
 
 ### One-Click Deployments
 
-[![Deploy on DigitalOcean](https://www.deploytodo.com/do-btn-blue.svg)](https://github.com/HiEventsDev/hi.events-digitalocean)
+[![Deploy on DigitalOcean](https://www.deploytodo.com/do-btn-blue.svg)](https://github.com/HiEventsDev/onetick-digitalocean)
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://github.com/HiEventsDev/hi.events-render.com)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://github.com/HiEventsDev/onetick-render.com)
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/8CGKmu?referralCode=KvSr11)
 
@@ -111,12 +111,12 @@ a quick start, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
-   git clone git@github.com:HiEventsDev/hi.events.git
+   git clone git@github.com:HiEventsDev/onetick.git
    ```
 
 2. **Navigate to the Docker Directory:**
    ```bash
-   cd hi.events/docker/all-in-one
+   cd onetick/docker/all-in-one
    ```
 
 3. **Generate the `APP_KEY` and `JWT_SECRET`**
@@ -143,31 +143,31 @@ a quick start, follow these steps:
    Open your browser and navigate to http://localhost:8123/auth/register.
    ```
 
-ℹ️ Please refer to the [getting started guide](https://hi.events/docs/getting-started) for other installation methods, and
+ℹ️ Please refer to the [getting started guide](https://onetick/docs/getting-started) for other installation methods, and
 for setting up a production or local development environment.
 
 ## 💜 Sponsors
-<a href="https://stinkingbadges.app/?utm_source=hi.events-readme">
+<a href="https://stinkingbadges.app/?utm_source=onetick-readme">
 Stinking Badges
 </a>
 
 ### Making a Donation
 
-If you find Hi.Events useful, it would be massively appreciated if you made a small donation to help support the project.
+If you find OneTick useful, it would be massively appreciated if you made a small donation to help support the project.
 
-We'll use your donation to fund ongoing development and maintenance of Hi.Events.
+We'll use your donation to fund ongoing development and maintenance of OneTick.
 
-<a href="https://www.buymeacoffee.com/hi.events" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+<a href="https://www.buymeacoffee.com/onetick" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 <br/>
 or
 <a href="https://github.com/sponsors/HiEventsDev" target="_blank"> Sponsor on GitHub</a>
 or
-<a href="https://opencollective.com/hievents" target="_blank"> Sponsor on Open Collective</a>
+<a href="https://opencollective.com/onetick" target="_blank"> Sponsor on Open Collective</a>
 
 ## 📝 Change Log
 
 Stay updated with our ongoing improvements and feature additions at
-our [GitHub releases page](https://github.com/HiEventsDev/hi.events/releases).
+our [GitHub releases page](https://github.com/HiEventsDev/onetick/releases).
 
 ## 🤝 Contributing
 
@@ -176,11 +176,11 @@ information.
 
 ## ❓ FAQ
 
-Have questions? Our [Docs](https://hi.events/docs) have answers. If you can't find what you're looking for, feel free to
-reach out to us at [hello@hi.events](mailto:hello@hi.events).
+Have questions? Our [Docs](https://onetick/docs) have answers. If you can't find what you're looking for, feel free to
+reach out to us at [hello@onetick](mailto:hello@onetick).
 
 ## 📜 License
 
-Hi.Events is licensed under the terms of the [AGPL-3.0](https://github.com/HiEventsDev/hi.events/blob/main/LICENCE) license.
+OneTick is licensed under the terms of the [AGPL-3.0](https://github.com/HiEventsDev/onetick/blob/main/LICENCE) license.
 
-For more licensing information, including commercial licencing options, please visit our licensing page [here](https://hi.events/licensing).
+For more licensing information, including commercial licencing options, please visit our licensing page [here](https://onetick/licensing).

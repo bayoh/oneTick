@@ -4,7 +4,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
-"Project-Id-Version: Hi.Events\n"
+"Project-Id-Version: OneTick\n"
 "Language: zh-Hans\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
@@ -1657,16 +1657,16 @@ msgstr "下面是 React 组件，您可以用它在应用程序中嵌入 widget�
 #: src/components/modals/CreateEventModal/index.tsx:131
 #: src/components/modals/DuplicateEventModal/index.tsx:78
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:73
-msgid "Hi.Events Conference {0}"
-msgstr "Hi.Events Conference {0}"
+msgid "OneTick Conference {0}"
+msgstr "OneTick Conference {0}"
 
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:108
-msgid "Hi.Events Conference Center"
-msgstr "Hi.Events 会议中心"
+msgid "OneTick Conference Center"
+msgstr "OneTick 会议中心"
 
 #: src/components/layouts/AuthLayout/index.tsx:24
-msgid "hi.events logo"
-msgstr "hi.events 徽标"
+msgid "onetick logo"
+msgstr "onetick 徽标"
 
 #: src/components/common/TicketsTable/SortableTicket/index.tsx:77
 msgid "Hidden from public view"
@@ -3742,8 +3742,8 @@ msgid "Welcome back{0} 👋"
 msgstr "欢迎回来{0} 👋"
 
 #: src/components/routes/welcome/index.tsx:125
-msgid "Welcome to Hi.Events, {0} 👋"
-msgstr "欢迎来到 Hi.Events, {0} 👋"
+msgid "Welcome to OneTick, {0} 👋"
+msgstr "欢迎来到 OneTick, {0} 👋"
 
 #: src/components/forms/TicketForm/index.tsx:202
 msgid "What are Tiered Tickets?"

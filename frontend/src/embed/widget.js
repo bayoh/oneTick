@@ -14,11 +14,11 @@
             return;
         }
 
-        const widgets = document.querySelectorAll('.hievents-widget');
+        const widgets = document.querySelectorAll('.onetick-widget');
         widgets.forEach((widget, index) => {
-            const eventId = widget.getAttribute('data-hievents-id');
+            const eventId = widget.getAttribute('data-onetick-id');
             if (!eventId) {
-                console.error('HiEvent widget error: data-hievents-id is required');
+                console.error('OneTick widget error: data-onetick-id is required');
                 return;
             }
 
@@ -39,17 +39,17 @@
                 ' allow-presentation'
             );
 
-            iframe.setAttribute('title', 'Hi.Events Widget');
+            iframe.setAttribute('title', 'OneTick Widget');
             iframe.style.border = 'none';
             iframe.style.width = '100%';
 
-            const iframeId = `hievents-iframe-${index}`;
+            const iframeId = `onetick-iframe-${index}`;
             iframe.id = iframeId;
 
             let src = `${scriptOrigin}/widget/${encodeURIComponent(eventId)}?iframeId=${iframeId}&`;
             const params = [];
             Array.from(widget.attributes).forEach(attr => {
-                if (attr.name.startsWith('data-hievents-') && attr.name !== 'data-hievents-id') {
+                if (attr.name.startsWith('data-onetick-') && attr.name !== 'data-onetick-id') {
                     const paramName = attr.name.substring(13).replace(/-([a-z])/g, (g) => g[1].toUpperCase());
                     params.push(`${paramName}=${encodeURIComponent(attr.value)}`);
                 }
@@ -59,7 +59,7 @@
 
             widget.appendChild(iframe);
 
-            const autoResize = widget.getAttribute('data-hievents-autoresize') !== 'false';
+            const autoResize = widget.getAttribute('data-onetick-autoresize') !== 'false';
 
             if (autoResize) {
                 window.addEventListener('message', (event) => {

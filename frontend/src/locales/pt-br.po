@@ -4,7 +4,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
-"Project-Id-Version: Hi.Events\n"
+"Project-Id-Version: OneTick\n"
 "Language: pt-br\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
@@ -1657,16 +1657,16 @@ msgstr "Aqui está o componente React que você pode usar para incorporar o widg
 #: src/components/modals/CreateEventModal/index.tsx:131
 #: src/components/modals/DuplicateEventModal/index.tsx:78
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:73
-msgid "Hi.Events Conference {0}"
-msgstr "Conferência de eventos da Hi.Events {0}"
+msgid "OneTick Conference {0}"
+msgstr "Conferência de eventos da OneTick {0}"
 
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:108
-msgid "Hi.Events Conference Center"
-msgstr "Centro de Conferências Hi.Events"
+msgid "OneTick Conference Center"
+msgstr "Centro de Conferências OneTick"
 
 #: src/components/layouts/AuthLayout/index.tsx:24
-msgid "hi.events logo"
-msgstr "logotipo da hi.events"
+msgid "onetick logo"
+msgstr "logotipo da onetick"
 
 #: src/components/common/TicketsTable/SortableTicket/index.tsx:77
 msgid "Hidden from public view"
@@ -3742,8 +3742,8 @@ msgid "Welcome back{0} 👋"
 msgstr "Bem-vindo de volta{0} 👋"
 
 #: src/components/routes/welcome/index.tsx:125
-msgid "Welcome to Hi.Events, {0} 👋"
-msgstr "Bem-vindo à Hi.Events, {0} 👋"
+msgid "Welcome to OneTick, {0} 👋"
+msgstr "Bem-vindo à OneTick, {0} 👋"
 
 #: src/components/forms/TicketForm/index.tsx:202
 msgid "What are Tiered Tickets?"

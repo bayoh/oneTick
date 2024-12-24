@@ -85,7 +85,7 @@ app.use("*", async (req, res) => {
             .map((value) => value.toString() || "")
             .join(" ");
 
-        const envVariablesHtml = `<script>window.hievents = ${getViteEnvironmentVariables()};</script>`;
+        const envVariablesHtml = `<script>window.onetick = ${getViteEnvironmentVariables()};</script>`;
 
         const html = template
             .replace("<!--app-html-->", appHtml)
