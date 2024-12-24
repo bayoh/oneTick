@@ -51,19 +51,19 @@ export const WidgetEditor = () => {
     useEffect(() => {
         setHtmlEmbedCode(
             '<div ' +
-            'data-hievents-id="' + eventId + '" ' +
-            'data-hievents-primary-color="' + form.values.primary_color + '" ' +
-            'data-hievents-primary-text-color="' + form.values.primary_text_color + '" ' +
-            'data-hievents-secondary-color="' + form.values.secondary_color + '" ' +
-            'data-hievents-secondary-text-color="' + form.values.secondary_text_color + '" ' +
-            'data-hievents-background-color="' + form.values.background_color + '" ' +
-            'data-hievents-widget-type="widget" ' +
-            'data-hievents-widget-version="1.0" ' +
-            'data-hievents-locale="en" ' +
-            'data-hievents-padding="' + form.values.padding + 'px" ' +
-            'data-hievents-autoresize="' + form.values.autoResize + '" ' +
-            'data-hievents-continue-button-text="' + form.values.continue_button_text + '" ' +
-            'class="hievents-widget">' +
+            'data-onetick-id="' + eventId + '" ' +
+            'data-onetick-primary-color="' + form.values.primary_color + '" ' +
+            'data-onetick-primary-text-color="' + form.values.primary_text_color + '" ' +
+            'data-onetick-secondary-color="' + form.values.secondary_color + '" ' +
+            'data-onetick-secondary-text-color="' + form.values.secondary_text_color + '" ' +
+            'data-onetick-background-color="' + form.values.background_color + '" ' +
+            'data-onetick-widget-type="widget" ' +
+            'data-onetick-widget-version="1.0" ' +
+            'data-onetick-locale="en" ' +
+            'data-onetick-padding="' + form.values.padding + 'px" ' +
+            'data-onetick-autoresize="' + form.values.autoResize + '" ' +
+            'data-onetick-continue-button-text="' + form.values.continue_button_text + '" ' +
+            'class="onetick-widget">' +
             '</div>'
         );
 
@@ -94,16 +94,16 @@ const HiEventsWidget = ({
 
   return (
     <div
-      data-hievents-id={eventId}
-      data-hievents-primary-color={primaryColor}
-      data-hievents-primary-text-color={primaryTextColor}
-      data-hievents-secondary-color={secondaryColor}
-      data-hievents-secondary-text-color={secondaryTextColor}
-      data-hievents-background-color={backgroundColor}
-      data-hievents-widget-type={widgetType}
-      data-hievents-widget-version={widgetVersion}
-      data-hievents-locale={locale}
-      className="hievents-widget"
+      data-onetick-id={eventId}
+      data-onetick-primary-color={primaryColor}
+      data-onetick-primary-text-color={primaryTextColor}
+      data-onetick-secondary-color={secondaryColor}
+      data-onetick-secondary-text-color={secondaryTextColor}
+      data-onetick-background-color={backgroundColor}
+      data-onetick-widget-type={widgetType}
+      data-onetick-widget-version={widgetVersion}
+      data-onetick-locale={locale}
+      className="onetick-widget"
     />
   );
 };

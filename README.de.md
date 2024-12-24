@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://hievents-public.s3.us-west-1.amazonaws.com/website/hi-events-rainbow.png?v=1" alt="Hi.Events Logo" width="200px">
+  <img src="https://onetick-public.s3.us-west-1.amazonaws.com/website/onetick-rainbow.png?v=1" alt="OneTick Logo" width="200px">
 </p>
-<h3 align="center">Hi.Events</h3>
+<h3 align="center">OneTick</h3>
 <p align="center">
-<a href="https://demo.hi.events/event/1/dog-conf-2030">Demo-Event 🌟</a> <a href="https://hi.events?utm_source=gh-readme">Website 🌎</a>  <a href="https://hi.events/docs">Dokumentation 📄</a>  <a href="https://hi.events/docs/getting-started?utm_source=gh-readme">Installation ⚙️</a>
+<a href="https://demo.onetick/event/1/dog-conf-2030">Demo-Event 🌟</a> <a href="https://onetick?utm_source=gh-readme">Website 🌎</a>  <a href="https://onetick/docs">Dokumentation 📄</a>  <a href="https://onetick/docs/getting-started?utm_source=gh-readme">Installation ⚙️</a>
 </p>
 
 <h3 align="center">
@@ -12,11 +12,11 @@
 
 <div align="center">
 
-[![Hi.Events docs](https://img.shields.io/badge/docs-hi.events-blue)](https://hi.events/docs)
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://github.com/HiEventsDev/hi.events/LICENCE)
-[![GitHub Release](https://img.shields.io/github/v/release/HiEventsDev/hi.events?include_prereleases)](https://github.com/HiEventsDev/hi.events/releases)
-[![Run Unit Tests](https://github.com/HiEventsDev/hi.events/actions/workflows/unit-tests.yml/badge.svg?event=push)](https://github.com/HiEventsDev/hi.events/actions/workflows/unit-tests.yml)
-[![Docker Pulls](https://img.shields.io/docker/pulls/daveearley/hi.events-all-in-one)](https://hub.docker.com/r/daveearley/hi.events-all-in-one)
+[![OneTick docs](https://img.shields.io/badge/docs-onetick-blue)](https://onetick/docs)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://github.com/HiEventsDev/onetick/LICENCE)
+[![GitHub Release](https://img.shields.io/github/v/release/HiEventsDev/onetick?include_prereleases)](https://github.com/HiEventsDev/onetick/releases)
+[![Run Unit Tests](https://github.com/HiEventsDev/onetick/actions/workflows/unit-tests.yml/badge.svg?event=push)](https://github.com/HiEventsDev/onetick/actions/workflows/unit-tests.yml)
+[![Docker Pulls](https://img.shields.io/docker/pulls/daveearley/onetick-all-in-one)](https://hub.docker.com/r/daveearley/onetick-all-in-one)
 
 </div>
 
@@ -37,19 +37,19 @@
 
 ## 📚 Einführung
 
-<a href="https://hi.events">Hi.Events</a> ist eine funktionsreiche, selbst gehostete Event-Management- und Ticketing-Plattform. Von Konferenzen bis zu Clubnächten,
-Hi.Events ist darauf ausgelegt, Ihnen zu helfen, Events jeder Größe zu erstellen, zu verwalten und Tickets zu verkaufen.
+<a href="https://onetick">OneTick</a> ist eine funktionsreiche, selbst gehostete Event-Management- und Ticketing-Plattform. Von Konferenzen bis zu Clubnächten,
+OneTick ist darauf ausgelegt, Ihnen zu helfen, Events jeder Größe zu erstellen, zu verwalten und Tickets zu verkaufen.
 
-<img alt="Hi.Events selbst gehostetes Ticketverkaufs-Dashboard" src="https://hievents-public.s3.us-west-1.amazonaws.com/website/dashboard-screenshot.png"/>
+<img alt="OneTick selbst gehostetes Ticketverkaufs-Dashboard" src="https://onetick-public.s3.us-west-1.amazonaws.com/website/dashboard-screenshot.png"/>
 
 ## 🌟 Funktionen
 
-<a href="https://hi.events">Hi.Events</a> ist mit Funktionen ausgestattet, die Ihr Event-Management und Ticketing optimieren:
+<a href="https://onetick">OneTick</a> ist mit Funktionen ausgestattet, die Ihr Event-Management und Ticketing optimieren:
 
 - 📊 **Event-Analytik:** Gewinnen Sie tiefe Einblicke in die Event-Performance und Ticketverkäufe.
 - 🎟 **Einbettbares Ticket-Widget:** Integrieren Sie den Ticketverkauf problemlos in jede Website.
 - 🖥 **Anpassbare Event-Homepages:** Erstellen Sie auffällige Event-Seiten mit flexiblen Designoptionen.
-- 🔑 **Intuitive Check-In-Tools:** Einfache Check-Ins der Teilnehmer vor Ort mit dem QR-Code-Check-In-Tool von Hi.Events.
+- 🔑 **Intuitive Check-In-Tools:** Einfache Check-Ins der Teilnehmer vor Ort mit dem QR-Code-Check-In-Tool von OneTick.
 - 💬 **Event-Messaging-Tools:** Senden Sie Teilnehmern wichtige Updates und Erinnerungen.
 - 📝 **Anpassbare Bestellformulare:** Sammeln Sie Teilnehmerinformationen mit maßgeschneiderten Fragen beim Checkout.
 - 🎫 **Mehrere Ticketarten:** Kostenlose, kostenpflichtige, Spenden- oder gestufte Ticketarten.
@@ -70,14 +70,14 @@ Hi.Events ist darauf ausgelegt, Ihnen zu helfen, Events jeder Größe zu erstell
 
 ## 🚀 Schnellstart
 
-Für detaillierte Installationsanweisungen lesen Sie bitte unsere [Dokumentation](https://hi.events/docs/getting-started). Für
+Für detaillierte Installationsanweisungen lesen Sie bitte unsere [Dokumentation](https://onetick/docs/getting-started). Für
 einen schnellen Start folgen Sie diesen Schritten:
 
 ### One-Click Deployments
 
-[![Auf DigitalOcean bereitstellen](https://www.deploytodo.com/do-btn-blue.svg)](https://github.com/HiEventsDev/hi.events-digitalocean)
+[![Auf DigitalOcean bereitstellen](https://www.deploytodo.com/do-btn-blue.svg)](https://github.com/HiEventsDev/onetick-digitalocean)
 
-[![Auf Render bereitstellen](https://render.com/images/deploy-to-render-button.svg)](https://github.com/HiEventsDev/hi.events-render.com)
+[![Auf Render bereitstellen](https://render.com/images/deploy-to-render-button.svg)](https://github.com/HiEventsDev/onetick-render.com)
 
 [![Auf Railway bereitstellen](https://railway.app/button.svg)](https://railway.app/template/8CGKmu?referralCode=KvSr11)
 
@@ -91,12 +91,12 @@ einen schnellen Start folgen Sie diesen Schritten:
 
 1. **Repository klonen:**
    ```bash
-   git clone git@github.com:HiEventsDev/hi.events.git
+   git clone git@github.com:HiEventsDev/onetick.git
    ```
 
 2. **Zum Docker-Verzeichnis navigieren:**
    ```bash
-   cd hi.events/docker/all-in-one
+   cd onetick/docker/all-in-one
    ```
 
 3. **Docker-Container starten:**
@@ -108,12 +108,12 @@ einen schnellen Start folgen Sie diesen Schritten:
    Öffnen Sie Ihren Browser und navigieren Sie zu http://localhost:8123/auth/register.
    ```
 
-ℹ️ Bitte lesen Sie den [Schnellstart-Leitfaden](https://hi.events/docs/getting-started) für andere Installationsmethoden und
+ℹ️ Bitte lesen Sie den [Schnellstart-Leitfaden](https://onetick/docs/getting-started) für andere Installationsmethoden und
 für die Einrichtung einer Produktions- oder lokalen Entwicklungsumgebung.
 
 ## 📝 Änderungsprotokoll
 
-Bleiben Sie auf dem Laufenden mit unseren laufenden Verbesserungen und Funktionserweiterungen auf unserer [GitHub-Releases-Seite](https://github.com/HiEventsDev/hi.events/releases).
+Bleiben Sie auf dem Laufenden mit unseren laufenden Verbesserungen und Funktionserweiterungen auf unserer [GitHub-Releases-Seite](https://github.com/HiEventsDev/onetick/releases).
 
 ## 🤝 Beiträge
 
@@ -122,10 +122,10 @@ Wir begrüßen Beiträge, Vorschläge und Fehlerberichte! Bevor Sie ein neues Fe
 
 ## ❓ FAQ
 
-Haben Sie Fragen? Unsere [Dokumentation](https://hi.events/docs) hat Antworten. Wenn Sie nicht finden, wonach Sie suchen, können Sie uns gerne unter [hello@hi.events](mailto:hello@hi.events) kontaktieren.
+Haben Sie Fragen? Unsere [Dokumentation](https://onetick/docs) hat Antworten. Wenn Sie nicht finden, wonach Sie suchen, können Sie uns gerne unter [hello@onetick](mailto:hello@onetick) kontaktieren.
 
 ## 📜 Lizenz
 
-Hi.Events ist unter den Bedingungen der [AGPL-3.0](https://github.com/HiEventsDev/hi.events/blob/main/LICENCE) lizenziert.
+OneTick ist unter den Bedingungen der [AGPL-3.0](https://github.com/HiEventsDev/onetick/blob/main/LICENCE) lizenziert.
 
-Für weitere Lizenzinformationen, einschließlich kommerzieller Lizenzoptionen, besuchen Sie bitte unsere Lizenzseite [hier](https://hi.events/licensing).
+Für weitere Lizenzinformationen, einschließlich kommerzieller Lizenzoptionen, besuchen Sie bitte unsere Lizenzseite [hier](https://onetick/licensing).

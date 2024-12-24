@@ -1,7 +1,7 @@
 {
-    "name": "hieventsdev/hi.events",
+    "name": "onetickdev/onetick",
     "type": "project",
-    "description": "hi.events - Ticket selling and event management.",
+    "description": "onetick - Ticket selling and event management.",
     "keywords": ["ticketing", "events"],
     "license": "AGPL-3.0",
     "version": "0.0.1",

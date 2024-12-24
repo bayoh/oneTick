@@ -20,7 +20,7 @@ import {StartupChecks} from "./StartupChecks.tsx";
 
 declare global {
     interface Window {
-        hievents: Record<string, string>;
+        onetick: Record<string, string>;
     }
 }
 
@@ -86,7 +86,7 @@ export const App: FC<
                             <StartupChecks/>
                             <ModalsProvider>
                                 <Helmet>
-                                    <title>Hi.Events</title>
+                                    <title>One Tick</title>
                                 </Helmet>
                                 {props.children}
                             </ModalsProvider>

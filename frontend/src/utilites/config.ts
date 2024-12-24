@@ -8,6 +8,6 @@ export const getConfig = (key: ConfigKeys): string | undefined => {
         return serverEnv[key] as string | undefined;
     }
 
-    const clientEnv = typeof window !== "undefined" && window.hievents ? window.hievents : {};
+    const clientEnv = typeof window !== "undefined" && window.onetick ? window.onetick : {};
     return clientEnv[key];
 };

@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://hievents-public.s3.us-west-1.amazonaws.com/website/hi-events-rainbow.png?v=1" alt="Hi.Events 标志" width="200px">
+  <img src="https://onetick-public.s3.us-west-1.amazonaws.com/website/onetick-rainbow.png?v=1" alt="OneTick 标志" width="200px">
 </p>
-<h3 align="center">Hi.Events</h3>
+<h3 align="center">OneTick</h3>
 <p align="center">
-<a href="https://demo.hi.events/event/1/dog-conf-2030">演示活动 🌟</a> <a href="https://hi.events?utm_source=gh-readme">网站 🌎</a>  <a href="https://hi.events/docs">文档 📄</a>  <a href="https://hi.events/docs/getting-started?utm_source=gh-readme">安装 ⚙️</a>
+<a href="https://demo.onetick/event/1/dog-conf-2030">演示活动 🌟</a> <a href="https://onetick?utm_source=gh-readme">网站 🌎</a>  <a href="https://onetick/docs">文档 📄</a>  <a href="https://onetick/docs/getting-started?utm_source=gh-readme">安装 ⚙️</a>
 </p>
 
 <h3 align="center">
@@ -12,11 +12,11 @@
 
 <div align="center">
 
-[![Hi.Events 文档](https://img.shields.io/badge/docs-hi.events-blue)](https://hi.events/docs)
-[![许可证: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://github.com/HiEventsDev/hi.events/LICENCE)
-[![GitHub 发布](https://img.shields.io/github/v/release/HiEventsDev/hi.events?include_prereleases)](https://github.com/HiEventsDev/hi.events/releases)
-[![运行单元测试](https://github.com/HiEventsDev/hi.events/actions/workflows/unit-tests.yml/badge.svg?event=push)](https://github.com/HiEventsDev/hi.events/actions/workflows/unit-tests.yml)
-[![Docker 下载](https://img.shields.io/docker/pulls/daveearley/hi.events-all-in-one)](https://hub.docker.com/r/daveearley/hi.events-all-in-one)
+[![OneTick 文档](https://img.shields.io/badge/docs-onetick-blue)](https://onetick/docs)
+[![许可证: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://github.com/HiEventsDev/onetick/LICENCE)
+[![GitHub 发布](https://img.shields.io/github/v/release/HiEventsDev/onetick?include_prereleases)](https://github.com/HiEventsDev/onetick/releases)
+[![运行单元测试](https://github.com/HiEventsDev/onetick/actions/workflows/unit-tests.yml/badge.svg?event=push)](https://github.com/HiEventsDev/onetick/actions/workflows/unit-tests.yml)
+[![Docker 下载](https://img.shields.io/docker/pulls/daveearley/onetick-all-in-one)](https://hub.docker.com/r/daveearley/onetick-all-in-one)
 
 </div>
 
@@ -37,19 +37,19 @@
 
 ## 📚 介绍
 
-<a href="https://hi.events">Hi.Events</a> 是一个功能丰富的自托管活动管理和售票平台。从会议到俱乐部夜场，
-Hi.Events 旨在帮助您创建、管理和销售各种规模的活动门票。
+<a href="https://onetick">OneTick</a> 是一个功能丰富的自托管活动管理和售票平台。从会议到俱乐部夜场，
+OneTick 旨在帮助您创建、管理和销售各种规模的活动门票。
 
-<img alt="Hi.Events 自托管售票仪表盘" src="https://hievents-public.s3.us-west-1.amazonaws.com/website/dashboard-screenshot.png"/>
+<img alt="OneTick 自托管售票仪表盘" src="https://onetick-public.s3.us-west-1.amazonaws.com/website/dashboard-screenshot.png"/>
 
 ## 🌟 功能
 
-<a href="https://hi.events">Hi.Events</a> 拥有众多功能，简化您的活动管理和售票流程：
+<a href="https://onetick">OneTick</a> 拥有众多功能，简化您的活动管理和售票流程：
 
 - 📊 **活动分析:** 深入了解活动表现和门票销售情况。
 - 🎟 **可嵌入的售票小部件:** 轻松将售票集成到任何网站。
 - 🖥 **可定制的活动主页:** 通过灵活的设计选项创建引人注目的活动页面。
-- 🔑 **直观的签到工具:** 使用 Hi.Events 的二维码签到工具轻松签到与会者。
+- 🔑 **直观的签到工具:** 使用 OneTick 的二维码签到工具轻松签到与会者。
 - 💬 **活动消息工具:** 向与会者发送重要更新和提醒。
 - 📝 **自定义订单表单:** 在结账时通过定制问题收集与会者信息。
 - 🎫 **多种票种:** 免费、付费、捐赠或分级票种。
@@ -70,13 +70,13 @@ Hi.Events 旨在帮助您创建、管理和销售各种规模的活动门票。
 
 ## 🚀 快速开始
 
-有关详细的安装说明，请参阅我们的 [文档](https://hi.events/docs/getting-started)。如需快速开始，请按照以下步骤操作：
+有关详细的安装说明，请参阅我们的 [文档](https://onetick/docs/getting-started)。如需快速开始，请按照以下步骤操作：
 
 ### 一键部署
 
-[![在 DigitalOcean 上部署](https://www.deploytodo.com/do-btn-blue.svg)](https://github.com/HiEventsDev/hi.events-digitalocean)
+[![在 DigitalOcean 上部署](https://www.deploytodo.com/do-btn-blue.svg)](https://github.com/HiEventsDev/onetick-digitalocean)
 
-[![在 Render 上部署](https://render.com/images/deploy-to-render-button.svg)](https://github.com/HiEventsDev/hi.events-render.com)
+[![在 Render 上部署](https://render.com/images/deploy-to-render-button.svg)](https://github.com/HiEventsDev/onetick-render.com)
 
 [![在 Railway 上部署](https://railway.app/button.svg)](https://railway.app/template/8CGKmu?referralCode=KvSr11)
 
@@ -89,12 +89,12 @@ Hi.Events 旨在帮助您创建、管理和销售各种规模的活动门票。
 
 1. **克隆仓库：**
    ```bash
-   git clone git@github.com:HiEventsDev/hi.events.git
+   git clone git@github.com:HiEventsDev/onetick.git
    ```
 
 2. **导航到 Docker 目录：**
    ```bash
-   cd hi.events/docker/all-in-one
+   cd onetick/docker/all-in-one
    ```
 
 3. **启动 Docker 容器：**
@@ -106,11 +106,11 @@ Hi.Events 旨在帮助您创建、管理和销售各种规模的活动门票。
    打开浏览器并导航到 http://localhost:8123/auth/register。
    ```
 
-ℹ️ 请参阅 [快速开始指南](https://hi.events/docs/getting-started) 了解其他安装方法，以及设置生产或本地开发环境的详细步骤。
+ℹ️ 请参阅 [快速开始指南](https://onetick/docs/getting-started) 了解其他安装方法，以及设置生产或本地开发环境的详细步骤。
 
 ## 📝 更新日志
 
-请访问我们的 [GitHub 发布页面](https://github.com/HiEventsDev/hi.events/releases) 了解最新的改进和功能添加。
+请访问我们的 [GitHub 发布页面](https://github.com/HiEventsDev/onetick/releases) 了解最新的改进和功能添加。
 
 ## 🤝 贡献
 
@@ -118,10 +118,10 @@ Hi.Events 旨在帮助您创建、管理和销售各种规模的活动门票。
 
 ## ❓ 常见问题
 
-有问题吗？我们的 [文档](https://hi.events/docs) 有答案。如果您找不到所需的信息，请随时通过 [hello@hi.events](mailto:hello@hi.events) 联系我们。
+有问题吗？我们的 [文档](https://onetick/docs) 有答案。如果您找不到所需的信息，请随时通过 [hello@onetick](mailto:hello@onetick) 联系我们。
 
 ## 📜 许可证
 
-Hi.Events 根据 [AGPL-3.0](https://github.com/HiEventsDev/hi.events/blob/main/LICENCE) 许可证条款进行许可。
+OneTick 根据 [AGPL-3.0](https://github.com/HiEventsDev/onetick/blob/main/LICENCE) 许可证条款进行许可。
 
-有关更多许可信息，包括商业许可选项，请访问我们的许可页面 [此处](https://hi.events/licensing)。
+有关更多许可信息，包括商业许可选项，请访问我们的许可页面 [此处](https://onetick/licensing)。

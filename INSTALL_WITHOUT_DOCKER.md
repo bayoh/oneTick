@@ -1,9 +1,9 @@
-# Running Hi.Events Locally Without Docker
+# Running OneTick Locally Without Docker
 
-This guide provides instructions for setting up Hi.Events locally without using Docker, including the necessary prerequisites,
+This guide provides instructions for setting up OneTick locally without using Docker, including the necessary prerequisites,
 setup steps, and configuration details.
 
-**ℹ️ For a faster and more reliable setup, we strongly recommend using the official [Docker setup](https://hi.events/docs/getting-started/quick-start).**
+**ℹ️ For a faster and more reliable setup, we strongly recommend using the official [Docker setup](https://onetick/docs/getting-started/quick-start).**
 
 ## Prerequisites
 
@@ -22,10 +22,10 @@ Ensure the following PHP extensions are installed: `gd`, `pdo_pgsql`, `sodium`, 
 First, fork the repository and clone it locally:
 
 ```bash
-git clone https://github.com/youraccount/Hi.Events.git
+git clone https://github.com/youraccount/OneTick.git
 ```
 
-Hi.Events has two main directories: `backend` (Laravel) and `frontend` (React).
+OneTick has two main directories: `backend` (Laravel) and `frontend` (React).
 
 ### Backend Setup
 

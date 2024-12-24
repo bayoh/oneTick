@@ -254,7 +254,7 @@ msgid "A standard tax, like VAT or GST"
 msgstr ""
 
 #: src/components/common/GlobalMenu/index.tsx:25
-#~ msgid "About hi.events"
+#~ msgid "About onetick"
 #~ msgstr ""
 
 #: src/components/layouts/EventHomepage/EventInformation/index.tsx:79
@@ -1904,15 +1904,15 @@ msgstr ""
 #: src/components/modals/CreateEventModal/index.tsx:131
 #: src/components/modals/DuplicateEventModal/index.tsx:78
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:73
-msgid "Hi.Events Conference {0}"
+msgid "OneTick Conference {0}"
 msgstr ""
 
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:108
-msgid "Hi.Events Conference Center"
+msgid "OneTick Conference Center"
 msgstr ""
 
 #: src/components/layouts/AuthLayout/index.tsx:24
-msgid "hi.events logo"
+msgid "onetick logo"
 msgstr ""
 
 #: src/components/common/TicketsTable/SortableTicket/index.tsx:77
@@ -2912,11 +2912,11 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/layouts/EventHomepage/Footer/index.tsx:7
-#~ msgid "Powered by <0>Hi.Events</0> 👋"
+#~ msgid "Powered by <0>OneTick</0> 👋"
 #~ msgstr ""
 
 #: src/components/common/EventDocumentHead/index.tsx:14
-#~ msgid "Powered By Hi.Events"
+#~ msgid "Powered By OneTick"
 #~ msgstr ""
 
 #: src/components/forms/StripeCheckoutForm/index.tsx:136
@@ -4352,7 +4352,7 @@ msgid "Welcome back{0} 👋"
 msgstr ""
 
 #: src/components/routes/welcome/index.tsx:125
-msgid "Welcome to Hi.Events, {0} 👋"
+msgid "Welcome to OneTick, {0} 👋"
 msgstr ""
 
 #: src/components/forms/TicketForm/index.tsx:202

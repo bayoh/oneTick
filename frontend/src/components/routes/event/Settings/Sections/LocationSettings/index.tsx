@@ -105,7 +105,7 @@ export const LocationSettings = () => {
                             <TextInput
                                 {...form.getInputProps('location_details.venue_name')}
                                 label={t`Venue Name`}
-                                placeholder={t`Hi.Events Conference Center`}
+                                placeholder={t`OneTick Conference Center`}
                             />
                             <InputGroup>
                                 <TextInput

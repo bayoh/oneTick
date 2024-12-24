@@ -75,7 +75,7 @@ export const DuplicateEventModal = ({onClose, eventId}: DuplicateEventModalProps
                     <TextInput
                         {...form.getInputProps('title')}
                         label={t`Name`}
-                        placeholder={t`Hi.Events Conference ${new Date().getFullYear()}`}
+                        placeholder={t`OneTick Conference ${new Date().getFullYear()}`}
                         required
                     />
 

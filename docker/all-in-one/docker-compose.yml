@@ -20,7 +20,7 @@ services:
       - FILESYSTEM_PUBLIC_DISK=${FILESYSTEM_PUBLIC_DISK}
       - FILESYSTEM_PRIVATE_DISK=${FILESYSTEM_PRIVATE_DISK}
       - APP_CDN_URL=${APP_CDN_URL}
-      - DATABASE_URL=postgresql://postgres:secret@postgres:5432/hi-events
+      - DATABASE_URL=postgresql://postgres:secret@postgres:5432/onetick
 
     depends_on:
       postgres:
@@ -35,7 +35,7 @@ services:
       timeout: 5s
       retries: 5
     environment:
-      POSTGRES_DB: hi-events
+      POSTGRES_DB: onetick
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: secret
     volumes:

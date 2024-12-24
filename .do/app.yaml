@@ -2,22 +2,22 @@ alerts:
   - rule: DEPLOYMENT_FAILED
   - rule: DOMAIN_FAILED
 databases:
-  - cluster_name: hi-events-redis
+  - cluster_name: onetick-redis
     engine: REDIS
-    name: hi-events-redis
+    name: onetick-redis
     production: true
     version: "7"
-  - cluster_name: hi-events-postgres
-    db_name: hi-events-db
-    db_user: hi-events-db
+  - cluster_name: onetick-postgres
+    db_name: onetick-db
+    db_user: onetick-db
     engine: PG
-    name: hi-events-postgres
+    name: onetick-postgres
     production: true
     version: "12"
 domains:
-  - domain: demo.hi.events
+  - domain: demo.onetick
     type: PRIMARY
-  - domain: app.hi.events
+  - domain: app.onetick
     type: ALIAS
 envs:
   - key: APP_KEY
@@ -59,10 +59,10 @@ envs:
     value: us-west-1
   - key: AWS_PUBLIC_BUCKET
     scope: RUN_AND_BUILD_TIME
-    value: hievents-public
+    value: onetick-public
   - key: AWS_PRIVATE_BUCKET
     scope: RUN_AND_BUILD_TIME
-    value: hievents-private
+    value: onetick-private
   - key: STRIPE_PUBLIC_KEY
     scope: RUN_AND_BUILD_TIME
     type: SECRET
@@ -85,40 +85,40 @@ envs:
     value: pgsql
   - key: DB_HOST
     scope: RUN_AND_BUILD_TIME
-    value: ${hi-events-postgres.HOSTNAME}
+    value: ${onetick-postgres.HOSTNAME}
   - key: DB_PORT
     scope: RUN_AND_BUILD_TIME
-    value: ${hi-events-postgres.PORT}
+    value: ${onetick-postgres.PORT}
   - key: DB_DATABASE
     scope: RUN_AND_BUILD_TIME
-    value: ${hi-events-postgres.DATABASE}
+    value: ${onetick-postgres.DATABASE}
   - key: DB_USERNAME
     scope: RUN_AND_BUILD_TIME
-    value: ${hi-events-postgres.USERNAME}
+    value: ${onetick-postgres.USERNAME}
   - key: DB_PASSWORD
     scope: RUN_AND_BUILD_TIME
-    value: ${hi-events-postgres.PASSWORD}
+    value: ${onetick-postgres.PASSWORD}
   - key: REDIS_HOST
     scope: RUN_AND_BUILD_TIME
-    value: ${hi-events-redis.HOSTNAME}
+    value: ${onetick-redis.HOSTNAME}
   - key: REDIS_PASSWORD
     scope: RUN_AND_BUILD_TIME
-    value: ${hi-events-redis.PASSWORD}
+    value: ${onetick-redis.PASSWORD}
   - key: REDIS_USER
     scope: RUN_AND_BUILD_TIME
-    value: ${hi-events-redis.USERNAME}
+    value: ${onetick-redis.USERNAME}
   - key: REDIS_PORT
     scope: RUN_AND_BUILD_TIME
-    value: ${hi-events-redis.PORT}
+    value: ${onetick-redis.PORT}
   - key: REDIS_URL
     scope: RUN_AND_BUILD_TIME
-    value: ${hi-events-redis.REDIS_URL}
+    value: ${onetick-redis.REDIS_URL}
   - key: QUEUE_CONNECTION
     scope: RUN_AND_BUILD_TIME
     value: redis
   - key: DATABASE_URL
     scope: RUN_AND_BUILD_TIME
-    value: ${hi-events-postgres.DATABASE_URL}
+    value: ${onetick-postgres.DATABASE_URL}
   - key: STRIPE_WEBHOOK_SECRET
     scope: RUN_AND_BUILD_TIME
     type: SECRET
@@ -131,21 +131,21 @@ envs:
     value: XXX
   - key: MAIL_FROM_ADDRESS
     scope: RUN_AND_BUILD_TIME
-    value: hello@hi.events
+    value: hello@onetick
   - key: MAIL_FROM_NAME
     scope: RUN_AND_BUILD_TIME
-    value: Hi.Events
+    value: OneTick
 features:
   - buildpack-stack=ubuntu-22
 ingress:
   rules:
     - component:
-        name: hi-events-backend
+        name: onetick-backend
       match:
         path:
           prefix: /api
     - component:
-        name: hi-events-frontend
+        name: onetick-frontend
       match:
         path:
           prefix: /
@@ -154,7 +154,7 @@ jobs:
     github:
       branch: main
       deploy_on_push: true
-      repo: HiEventsDev/Hi.Events
+      repo: HiEventsDev/OneTick
     instance_count: 2
     instance_size_slug: professional-xs
     kind: PRE_DEPLOY
@@ -162,10 +162,10 @@ jobs:
       - logtail:
           token: XXX
         name: LogTail
-    name: hi-events-migration
+    name: onetick-migration
     run_command: php artisan migrate --force
     source_dir: backend
-name: hi-events-backend-app
+name: onetick-backend-app
 region: sfo
 services:
   - alerts:
@@ -181,7 +181,7 @@ services:
     github:
       branch: main
       deploy_on_push: true
-      repo: HiEventsDev/Hi.Events
+      repo: HiEventsDev/OneTick
     http_port: 8080
     instance_count: 1
     instance_size_slug: professional-xs
@@ -189,7 +189,7 @@ services:
       - logtail:
           token: XXX
         name: LogTail
-    name: hi-events-backend
+    name: onetick-backend
     source_dir: backend
   - build_command: yarn build
     environment_slug: node-js
@@ -209,11 +209,11 @@ services:
     github:
       branch: main
       deploy_on_push: true
-      repo: HiEventsDev/Hi.Events
+      repo: HiEventsDev/OneTick
     http_port: 5678
     instance_count: 1
     instance_size_slug: professional-xs
-    name: hi-events-frontend
+    name: onetick-frontend
     run_command: yarn start
     source_dir: frontend
 workers:
@@ -221,13 +221,13 @@ workers:
     github:
       branch: main
       deploy_on_push: true
-      repo: HiEventsDev/Hi.Events
+      repo: HiEventsDev/OneTick
     instance_count: 1
     instance_size_slug: professional-xs
     log_destinations:
       - logtail:
           token: XXX
         name: LogTail
-    name: hi-events-worker
+    name: onetick-worker
     run_command: php artisan queue:work
     source_dir: backend
