@@ -33,6 +33,7 @@ class CheckInListRepository extends BaseRepository implements CheckInListReposit
                 SELECT attendee_id, check_in_list_id
                 FROM attendee_check_ins
                 WHERE deleted_at IS NULL
+                AND check_in_list_id = :check_in_list_id
                 GROUP BY attendee_id, check_in_list_id
             ),
                  valid_attendees AS (
@@ -41,6 +42,7 @@ class CheckInListRepository extends BaseRepository implements CheckInListReposit
                               JOIN ticket_check_in_lists tcil ON a.ticket_id = tcil.ticket_id
                      WHERE a.deleted_at IS NULL
                        AND tcil.deleted_at IS NULL
+                       AND tcil.check_in_list_id = :check_in_list_id
                  )
             SELECT
                 cil.id AS check_in_list_id,
