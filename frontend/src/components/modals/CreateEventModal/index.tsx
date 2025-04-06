@@ -5,7 +5,7 @@ import {Event, GenericModalProps, IdParam, Organizer} from "../../../types.ts";
 import {useEffect, useState} from "react";
 import {showSuccess} from "../../../utilites/notifications.tsx";
 import {t} from "@lingui/macro";
-import {Anchor, Button, Select, SimpleGrid, TextInput} from "@mantine/core";
+import {Anchor, Button, Select, SimpleGrid, TextInput, FileInput} from "@mantine/core";
 import {hasLength, useForm} from "@mantine/form";
 import {Modal} from "../../common/Modal";
 import {useCreateEvent} from "../../../mutations/useCreateEvent.ts";
@@ -138,6 +138,12 @@ export const CreateEventModal = ({onClose, organizerId}: CreateEventModalProps) 
                     onChange={(value) => form.setFieldValue('description', value)}
                     error={form.errors.description as string}
                 />
+
+                <FileInput 
+                accept="image/png,image/jpeg" 
+                {...form.getInputProps('image')}
+                label={t`Upload Image`}
+                placeholder={t`Upload Image`} />
 
                 <SimpleGrid mt={20} cols={2}>
                     <TextInput type={'datetime-local'}

@@ -129,6 +129,7 @@ export interface VenueAddress {
 export interface EventBase {
     title: string;
     description?: string;
+    image?: Image
     start_date: string;
     end_date?: string;
 }

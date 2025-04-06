@@ -3,7 +3,7 @@ import QrScanner from 'qr-scanner';
 import {useDebouncedValue} from '@mantine/hooks';
 import classes from './QrScanner.module.scss';
 import {IconBulb, IconBulbOff, IconCameraRotate, IconVolume, IconVolumeOff, IconX} from "@tabler/icons-react";
-import {Anchor, Button, Menu} from "@mantine/core";
+import {Anchor, Button, Menu, TextInput} from "@mantine/core";
 import {showError} from "../../../utilites/notifications.tsx";
 import {t, Trans} from "@lingui/macro";
 
@@ -108,6 +108,7 @@ export const QRScannerComponent = (props: QRScannerComponentProps) => {
                             if (isSoundOn && scanSuccessAudioRef.current) {
                                 scanSuccessAudioRef.current.play();
                             }
+                            props.onClose(); // Close the scanner after successful scan
                         } else {
                             setIsScanFailed(true);
                             setInterval(function () {
@@ -189,6 +190,44 @@ export const QRScannerComponent = (props: QRScannerComponentProps) => {
             .then(() => updateFlashAvailability().catch(console.error));
     };
 
+    const [manualInput, setManualInput] = useState<string>('');
+    const [isManualMode, setIsManualMode] = useState(false);
+
+    const handleManualSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        if (!manualInput.trim()) return;
+        
+        setCurrentAttendeeId(manualInput.trim());
+        setManualInput('');
+    };
+
+    const toggleInputMode = () => {
+        setIsManualMode(!isManualMode);
+        if (!isManualMode) {
+            stopScanner();
+        } else {
+            startScanner();
+        }
+    };
+    const [barcodeBuffer, setBarcodeBuffer] = useState<string>('');
+    
+
+    useEffect(() => {
+        const handleKeyPress = (e: KeyboardEvent) => {
+            if (e.key === 'Enter') {
+                if (barcodeBuffer.trim()) {
+                    setCurrentAttendeeId(barcodeBuffer.trim());
+                    setBarcodeBuffer('');
+                }
+            } else if (e.key.length === 1) { // Only collect printable characters
+                setBarcodeBuffer(prev => prev + e.key);
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyPress);
+        return () => window.removeEventListener('keydown', handleKeyPress);
+    }, [barcodeBuffer]);
+
     return (
         <div className={classes.videoContainer}>
             {permissionDenied && (
@@ -210,12 +249,50 @@ export const QRScannerComponent = (props: QRScannerComponentProps) => {
                 </div>
             )}
 
-            <video className={classes.video} ref={videoRef}></video>
+            {!isManualMode && <video className={classes.video} ref={videoRef}></video>}
 
-            <Button onClick={handleFlashToggle} variant={'transparent'} className={classes.flashToggle}>
-                {!isFlashAvailable && <IconBulbOff color={'#ffffff95'} size={30}/>}
-                {isFlashAvailable && <IconBulb color={isFlashOn ? 'yellow' : '#ffffff95'} size={30}/>}
+            {isManualMode && (
+                <form onSubmit={handleManualSubmit} className={classes.manualInputForm}>
+                    <TextInput
+                        value={manualInput}
+                        onChange={(e) => setManualInput(e.target.value)}
+                        placeholder="Enter QR code manually"
+                        className={classes.manualInput}
+                    />
+                    <Button type="submit" color="green" disabled={!manualInput.trim()}>
+                        {t`Submit`}
+                    </Button>
+                </form>
+            )}
+
+            <Button onClick={toggleInputMode} variant={'transparent'} className={classes.inputModeToggle}>
+                {isManualMode ? t`Use Camera` : t`Manual Input`}
             </Button>
+
+            {!isManualMode && (
+                <>
+                    <Button onClick={handleFlashToggle} variant={'transparent'} className={classes.flashToggle}>
+                        {!isFlashAvailable && <IconBulbOff color={'#ffffff95'} size={30}/>}
+                        {isFlashAvailable && <IconBulb color={isFlashOn ? 'yellow' : '#ffffff95'} size={30}/>}
+                    </Button>
+                    <Button variant={'transparent'} className={classes.switchCameraButton}>
+                        <Menu shadow="md" width={200}>
+                            <Menu.Target>
+                                <IconCameraRotate color={'#ffffff95'} size={30}/>
+                            </Menu.Target>
+                            <Menu.Dropdown>
+                                <Menu.Label>{t`Select Camera`}</Menu.Label>
+                                {cameraList?.map((camera, index) => (
+                                    <Menu.Item key={index} onClick={handleCameraSelection(camera)}>
+                                        {camera.label}
+                                    </Menu.Item>
+                                ))}
+                            </Menu.Dropdown>
+                        </Menu>
+                    </Button>
+                </>
+            )}
+
             <Button onClick={handleSoundToggle} variant={'transparent'} className={classes.soundToggle}>
                 {isSoundOn && <IconVolume color={'#ffffff95'} size={30}/>}
                 {!isSoundOn && <IconVolumeOff color={'#ffffff95'} size={30}/>}
@@ -226,22 +303,11 @@ export const QRScannerComponent = (props: QRScannerComponentProps) => {
             <Button onClick={handleClose} variant={'transparent'} className={classes.closeButton}>
                 <IconX color={'#ffffff95'} size={30}/>
             </Button>
-            <Button variant={'transparent'} className={classes.switchCameraButton}>
-                <Menu shadow="md" width={200}>
-                    <Menu.Target>
-                        <IconCameraRotate color={'#ffffff95'} size={30}/>
-                    </Menu.Target>
-                    <Menu.Dropdown>
-                        <Menu.Label>{t`Select Camera`}</Menu.Label>
-                        {cameraList?.map((camera, index) => (
-                            <Menu.Item key={index} onClick={handleCameraSelection(camera)}>
-                                {camera.label}
-                            </Menu.Item>
-                        ))}
-                    </Menu.Dropdown>
-                </Menu>
-            </Button>
+            
             <div className={`${classes.scannerOverlay} ${isScanSucceeded ? classes.success : ""} ${isScanFailed ? classes.failure : ""} ${isCheckingIn ? classes.checkingIn : ""}`}/>
         </div>
     );
 };
+
+
+    
