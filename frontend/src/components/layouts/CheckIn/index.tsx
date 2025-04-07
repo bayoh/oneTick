@@ -52,10 +52,13 @@ const CheckIn = () => {
     const deleteCheckInMutation = useDeleteCheckInPublic(queryFilters);
 
     const handleCheckInToggle = (attendee: Attendee) => {
-        if (attendee.check_in) {
+        const currentCheckIn = attendee.check_ins?.find(
+            checkIn => checkIn.check_in_list_id === parseInt(checkInListShortId)
+        );
+        if (currentCheckIn) {
             deleteCheckInMutation.mutate({
                 checkInListShortId: checkInListShortId,
-                checkInShortId: attendee.check_in.short_id,
+                checkInShortId: currentCheckIn.short_id,
             }, {
                 onSuccess: () => {
                     showSuccess(<Trans>{attendee.first_name} <b>checked out</b> successfully</Trans>);

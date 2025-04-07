@@ -17,7 +17,7 @@ export const useCreateCheckInPublic = (pagination: QueryFilters) => {
                         if (data?.data?.length && attendee.id === data.data[0].attendee_id) {
                             return {
                                 ...attendee,
-                                check_in: data.data[0],
+                                check_in:[...(attendee.check_ins || []), data.data[0]],
                             };
                         }
                         return attendee;

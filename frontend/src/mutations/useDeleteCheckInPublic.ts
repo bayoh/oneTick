@@ -21,7 +21,7 @@ export const useDeleteCheckInPublic = (pagination: QueryFilters) => {
                     if (attendee.check_in?.short_id === checkInShortId) {
                         return {
                             ...attendee,
-                            check_in: undefined,
+                            check_in: (attendee.check_in || []).filter((checkIn: any) => checkIn.short_id !== checkInShortId),
                         };
                     }
                     return attendee;

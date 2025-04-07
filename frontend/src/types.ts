@@ -346,7 +346,7 @@ export interface Attendee {
     checked_in_by?: number;
     question_answers?: QuestionAnswer[];
     locale?: SupportedLocales;
-    check_in?: CheckIn;
+    check_in?: CheckIn[];
 }
 
 export interface Address {
