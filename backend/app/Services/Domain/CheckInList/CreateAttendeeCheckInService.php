@@ -59,6 +59,7 @@ class CreateAttendeeCheckInService
 
             $existingCheckIn = $existingCheckIns->first(
                 fn($checkIn) => $checkIn->getAttendeeId() === $attendee->getId()
+                    && $checkIn->getCheckInListId() === $checkInList->getId()
             );
 
             if ($attendee->getStatus() === AttendeeStatus::CANCELLED->name) {
@@ -75,7 +76,7 @@ class CreateAttendeeCheckInService
                 $checkIns->push($existingCheckIn);
                 $errors->addError(
                     key: $attendee->getPublicId(),
-                    message: __('Attendee :attendee_name is already checked in', [
+                    message: __('Attendee :attendee_name is already checked in to this check-in list', [
                         'attendee_name' => $attendee->getFullName(),
                     ])
                 );
