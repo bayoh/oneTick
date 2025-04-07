@@ -75,6 +75,7 @@ class CheckInListRepository extends BaseRepository implements CheckInListReposit
                 SELECT attendee_id, check_in_list_id
                 FROM attendee_check_ins
                 WHERE deleted_at IS NULL
+                AND check_in_list_id IN ($placeholders)
                 GROUP BY attendee_id, check_in_list_id
             ),
                  valid_attendees AS (
